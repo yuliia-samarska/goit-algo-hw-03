@@ -29,7 +29,7 @@ if number_range.count("-") == 1:
             lottery_numbers = get_numbers_ticket(min_number, max_number, quantity)
 
             if lottery_numbers:
-                print("Ваші лотерейні числа:", lottery_numbers)
+                print(f"Ваші лотерейні числа: {lottery_numbers}")
             else:
                 print("Помилка. Перевірте введені параметри.")
         else:
