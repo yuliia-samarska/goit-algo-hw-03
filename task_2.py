@@ -2,7 +2,7 @@ import random
 
 def get_numbers_ticket(min, max, quantity):
 
-    if not (1 <= min <= max <= 100):
+    if not (1 <= min <= max <= 1000):
         return []
 
     if not (1 <= quantity <= max - min + 1):
@@ -12,7 +12,7 @@ def get_numbers_ticket(min, max, quantity):
 
     return sorted(numbers)
 
-number_range = input("Введіть бажаний діапазон чисел від 1 до 100 у форматі min-max: ")
+number_range = input("Введіть бажаний діапазон чисел від 1 до 1000 у форматі min-max: ")
 
 if number_range.count("-") == 1:
     min_number, max_number = number_range.split("-")
@@ -37,4 +37,4 @@ if number_range.count("-") == 1:
     else:
         print("Помилка. Введіть два цілих додатних числа через дефіс.")
 else:
-    print("Помилка. Використовуйте формат min-max, наприклад 1-65.")
+    print("Помилка. Використовуйте формат min-max, наприклад 1-120.")
